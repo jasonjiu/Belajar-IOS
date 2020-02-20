@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="hcy-dC-jh0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBi-hA-JYB" userLabel="FirstButton">
+                                <rect key="frame" x="45" y="299" width="285" height="69"/>
+                                <state key="normal" title="Sign in with facebook" backgroundImage="FB">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6t-Dg-KOF" userLabel="SecondButton">
+                                <rect key="frame" x="45" y="388" width="285" height="69"/>
+                                <state key="normal" title="Sign in with google" backgroundImage="Google"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCq-mG-B2r" userLabel="ThirdButton">
+                                <rect key="frame" x="45" y="477" width="285" height="69"/>
+                                <state key="normal" title="Sign in with email" backgroundImage="Email">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or Create New Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpf-Qu-LVo">
+                                <rect key="frame" x="75.5" y="248" width="224" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social  Media" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DeP-hG-9yj">
+                                <rect key="frame" x="145" y="136" width="85" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hcy-dC-jh0" secondAttribute="trailing" id="10O-xR-39o"/>
+                            <constraint firstItem="PCq-mG-B2r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4cG-59-k5o"/>
+                            <constraint firstItem="KBi-hA-JYB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6O1-CP-iKc"/>
+                            <constraint firstItem="bpf-Qu-LVo" firstAttribute="top" secondItem="DeP-hG-9yj" secondAttribute="bottom" constant="40" id="7sq-qG-P14"/>
+                            <constraint firstItem="DeP-hG-9yj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cpc-fn-7CJ"/>
+                            <constraint firstItem="KBi-hA-JYB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FtQ-IS-JV1"/>
+                            <constraint firstItem="hcy-dC-jh0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NMF-Qa-SyT"/>
+                            <constraint firstAttribute="bottom" secondItem="hcy-dC-jh0" secondAttribute="bottom" id="QFk-bo-idU"/>
+                            <constraint firstItem="PCq-mG-B2r" firstAttribute="top" secondItem="d6t-Dg-KOF" secondAttribute="bottom" constant="20" id="Tp2-xO-JNk"/>
+                            <constraint firstItem="bpf-Qu-LVo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VA9-4W-rex"/>
+                            <constraint firstItem="d6t-Dg-KOF" firstAttribute="top" secondItem="KBi-hA-JYB" secondAttribute="bottom" constant="20" id="Vo7-z4-Dwv"/>
+                            <constraint firstItem="d6t-Dg-KOF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mob-Dx-KU9"/>
+                            <constraint firstItem="hcy-dC-jh0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="r2Q-Pj-ki9"/>
+                            <constraint firstItem="KBi-hA-JYB" firstAttribute="top" secondItem="bpf-Qu-LVo" secondAttribute="bottom" constant="30" id="sfe-lD-wjg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="414" height="896"/>
+        <image name="Email" width="285" height="69"/>
+        <image name="FB" width="285" height="69"/>
+        <image name="Google" width="285" height="69"/>
+    </resources>
+</document>
